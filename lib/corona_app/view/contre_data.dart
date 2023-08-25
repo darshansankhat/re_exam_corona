@@ -18,6 +18,7 @@ class _ContreDataState extends State<ContreData> {
   void initState() {
     super.initState();
     controller.apiDataParsing();
+    controller.serchData("");
   }
 
   @override
@@ -45,7 +46,7 @@ class _ContreDataState extends State<ContreData> {
                       hintText: "Search contre.....",
                       suffixIcon: IconButton(
                         onPressed: () {
-                          controller.serchData(txtsearch.text);
+                          controller.serchData("");
                         },
                         icon: Icon(Icons.search),
                       ),

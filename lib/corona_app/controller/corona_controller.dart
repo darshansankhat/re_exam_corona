@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 import 'package:re_exam_corona/corona_app/model/corona_model.dart';
 import 'package:re_exam_corona/corona_app/utils/api_helper.dart';
 
+import '../utils/database_helper.dart';
+
 class CoronaController extends GetxController
 {
 
@@ -36,5 +38,12 @@ class CoronaController extends GetxController
       }
       list.value=List.from(fiterlist);
     }
+  }
+
+  RxList dataList1 = [].obs;
+
+  Future<void> LoadDB()
+  async {
+    dataList1.value = await DB_Helper.db_helper.redDB();
   }
 }
