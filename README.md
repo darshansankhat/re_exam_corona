@@ -24,7 +24,6 @@ samples, guidance on mobile development, and a full API reference.
   <img src="https://github.com/darshansankhat/re_exam_corona/assets/119835050/542ccc88-ce79-4a1f-801e-5793ea5eed75" height="60%" width="30%">
   <img src="https://github.com/darshansankhat/re_exam_corona/assets/119835050/10cfca1d-43c3-4435-8642-25a831d866d7" height="60%" width="30%">
   <img src="https://github.com/darshansankhat/re_exam_corona/assets/119835050/c7ac25b4-54e1-4fbb-a7e2-be4e7d10c6b5" height="60%" width="30%">
-  <img src="https://github.com/darshansankhat/re_exam_corona/assets/119835050/e6c534b5-9f53-4865-8e3d-4157c0847930" height="60%" width="30%">
-  <img src="https://github.com/darshansankhat/re_exam_corona/assets/119835050/cfc0ff35-7852-4ff1-860c-a9c788febffc" height="60%" width="30%">
+  <img src="https://github.com/darshansankhat/re_exam_corona/assets/119835050/e6c534b5-9f53-4865-8e3d-4157c0847930" height="60%" width="30%"
   
 </p>
