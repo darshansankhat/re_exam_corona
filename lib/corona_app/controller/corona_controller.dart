@@ -8,26 +8,29 @@ class CoronaController extends GetxController
 {
 
   List<CoronaModel> dataList=[];
-  List<String> searchData = [];
+  // List<String> searchData = [];
+  RxList<CoronaModel> list=<CoronaModel>[].obs;
 
   Future<void> apiDataParsing()
   async {
     dataList = await ApiHelper.apiHelper.apiDataParsing();
+    list.value=List.from(dataList);
     update();
   }
 
-  RxList<CoronaModel> list=<CoronaModel>[].obs;
+
   List<CoronaModel> fiterlist=[];
 
   void serchData(String serch)
   {
+    fiterlist.clear();
     if(serch.isEmpty)
     {
       list.value=List.from(dataList);
     }
     else
     {
-      fiterlist.clear();
+
 
       for(var c in dataList)
       {
@@ -38,6 +41,7 @@ class CoronaController extends GetxController
       }
       list.value=List.from(fiterlist);
     }
+    update();
   }
 
   RxList dataList1 = [].obs;

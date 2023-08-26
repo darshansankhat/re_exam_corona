@@ -18,7 +18,7 @@ class _ContreDataState extends State<ContreData> {
   void initState() {
     super.initState();
     controller.apiDataParsing();
-    controller.serchData("");
+    // controller.serchData("");
   }
 
   @override
@@ -56,13 +56,7 @@ class _ContreDataState extends State<ContreData> {
               ),
             ),
             //contre
-            controller.dataList.isEmpty
-                ? Center(
-                    child: Center(
-                        child: CircularProgressIndicator(
-                    color: Colors.deepOrange,
-                  )))
-                : Obx(
+            Obx(
                     () => Expanded(
                       child: GridView.builder(
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
